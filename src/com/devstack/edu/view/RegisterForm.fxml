@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="registerformcontext" prefHeight="449.0" prefWidth="680.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.edu.controller.RegisterFormController">
+   <children>
+      <ImageView fitHeight="482.0" fitWidth="269.0" layoutX="-32.0" layoutY="-30.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/security/img_1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtFristName" layoutX="250.0" layoutY="78.0" prefHeight="34.0" prefWidth="194.0" promptText="Frist Name" style="-fx-text-fill: #10439F;" />
+      <PasswordField fx:id="txtPassword" layoutX="249.0" layoutY="188.0" prefHeight="34.0" prefWidth="411.0" promptText="password" style="-fx-text-fill: #10439F;" />
+      <Label layoutX="444.0" layoutY="328.0" text="OR">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="249.0" layoutY="263.0" mnemonicParsing="false" onAction="#SignupbtnOnAction" prefHeight="42.0" prefWidth="411.0" style="-fx-background-color: #008DDA;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="250.0" layoutY="357.0" mnemonicParsing="false" onAction="#alreadyaccOnAction" prefHeight="42.0" prefWidth="411.0" style="-fx-background-color: #06205d;" text="Already have an account" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="248.0" layoutY="14.0" prefHeight="36.0" prefWidth="117.0" text="Register">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLastname" layoutX="455.0" layoutY="78.0" prefHeight="34.0" prefWidth="204.0" promptText="Last Name" style="-fx-text-fill: #10439F;" />
+      <TextField fx:id="txtEmail" layoutX="248.0" layoutY="133.0" prefHeight="34.0" prefWidth="411.0" promptText="email" style="-fx-text-fill: #10439F;" />
+   </children>
+</AnchorPane>

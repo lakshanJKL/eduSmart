@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="studentcontext" prefHeight="483.0" prefWidth="762.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.edu.controller.StudentFormController">
+   <children>
+      <Label layoutX="13.0" layoutY="14.0" text="Student Management">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="519.0" layoutY="13.0" mnemonicParsing="false" onAction="#stbackOnAction" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #353B48; -fx-background-radius: 7;" text="Back to Home" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveupdatebtn" layoutX="616.0" layoutY="119.0" mnemonicParsing="false" onAction="#SavebtnOnAction" prefHeight="30.0" prefWidth="132.0" style="-fx-background-color: #008DDA;" text="Save Student" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="stName" layoutX="14.0" layoutY="77.0" prefHeight="30.0" prefWidth="185.0" promptText="Student Name" style="-fx-background-color: #CAF4FF; -fx-border-color: #5AB2FF; -fx-prompt-text-fill: #000000;" />
+      <TextField fx:id="stEmail" layoutX="205.0" layoutY="77.0" prefHeight="30.0" prefWidth="185.0" promptText="Email" style="-fx-background-color: #CAF4FF; -fx-border-color: #5AB2FF; -fx-prompt-text-fill: #000000;" />
+      <TextField fx:id="stAddress" layoutX="555.0" layoutY="77.0" prefHeight="30.0" prefWidth="193.0" promptText="Address" style="-fx-background-color: #CAF4FF; -fx-border-color: #5AB2FF; -fx-prompt-text-fill: #000000;" />
+      <TextField fx:id="txtsearch" layoutX="555.0" layoutY="185.0" prefHeight="25.0" prefWidth="193.0" promptText="Search" />
+      <DatePicker fx:id="stDob" layoutX="398.0" layoutY="77.0" prefHeight="30.0" prefWidth="149.0" promptText="Date Of Biirthday" style="-fx-background-color: #CAF4FF; -fx-border-color: #5AB2FF; -fx-prompt-text-fill: #000000;" />
+      <TableView fx:id="St_table" layoutX="11.0" layoutY="224.0" prefHeight="227.0" prefWidth="736.0" style="-fx-background-color: #A0DEFF;">
+        <columns>
+          <TableColumn fx:id="col_stid" prefWidth="66.0" text="Student ID" />
+          <TableColumn fx:id="col_stname" prefWidth="106.0" text="Student Name" />
+            <TableColumn fx:id="col_stemail" prefWidth="79.0" text="Email" />
+            <TableColumn fx:id="col_stdob" prefWidth="109.0" text="Date Of Birthday" />
+            <TableColumn fx:id="col_staddress" prefWidth="100.0" text="Address" />
+            <TableColumn fx:id="col_ststate" prefWidth="64.0" text="State" />
+            <TableColumn fx:id="st_ops" prefWidth="211.0" text="Operation" />
+        </columns>
+      </TableView>
+      <Label layoutX="632.0" layoutY="467.0" prefHeight="19.0" prefWidth="119.0" text="Developed by : JL">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="641.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnNewStudentOnAction" style="-fx-background-color: #16A085; -fx-background-radius: 7;" text="+New Student" textFill="#eeeeee">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="5.0" layoutY="168.0" prefHeight="5.0" prefWidth="748.0" />
+      <Label layoutX="13.0" layoutY="467.0" prefHeight="17.0" prefWidth="101.0" text="Version 1.0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="528.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons/search.png" />
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <URL value="file:///D:\IPS\projects\Java\edusamrt\src\com\devstack\edu\view\style\table.css" />
+   </stylesheets>
+</AnchorPane>

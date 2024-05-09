@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomecontext" prefHeight="471.0" prefWidth="731.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.edu.controller.IncomeFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" prefHeight="27.0" prefWidth="187.0" text="Income Management">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="481.0" layoutY="22.0" mnemonicParsing="false" onAction="#icomebackOnAction" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #353B48; -fx-background-radius: 7;" text="Back to Home" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="601.0" layoutY="526.0" prefHeight="19.0" prefWidth="113.0" text="Developed by : JL">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="604.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #16A085; -fx-background-radius: 7;" text="Print the Chart" textFill="#eeeeee">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="526.0" prefHeight="17.0" prefWidth="101.0" text="Version 1.0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdbtnlast_month" layoutX="13.0" layoutY="84.0" mnemonicParsing="false" onAction="#getday" prefHeight="27.0" prefWidth="101.0" text="Last Month">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="income" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbtntoday" layoutX="123.0" layoutY="84.0" mnemonicParsing="false" onAction="#getday" prefHeight="27.0" prefWidth="70.0" text="Today" toggleGroup="$income">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbtnall" layoutX="208.0" layoutY="84.0" mnemonicParsing="false" onAction="#getday" prefHeight="27.0" prefWidth="43.0" selected="true" text="All" toggleGroup="$income">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </RadioButton>
+      <AnchorPane fx:id="chart" layoutX="14.0" layoutY="111.0" prefHeight="401.0" prefWidth="703.0" />
+   </children>
+</AnchorPane>

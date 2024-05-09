@@ -1,0 +1,20 @@
+.table-view .column-header .label {
+    -fx-background-color: rgba(14, 70, 163, 0.85) !important;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #A3D8FF;
+}
+
+.table-row-cell:selected .cell {
+    -fx-background-color: #A3D8FF;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: black;
+}
+
+.button {
+    -fx-text-fill: white !important;
+}

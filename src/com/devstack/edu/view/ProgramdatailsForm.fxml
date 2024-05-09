@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="379.0" prefWidth="327.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.devstack.edu.controller.ProgramdatailsFormController">
+   <children>
+      <Label layoutX="95.0" layoutY="14.0" text="Program Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="196.0" layoutY="347.0" prefHeight="19.0" prefWidth="115.0" text="Developed by : JL">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="347.0" prefHeight="19.0" prefWidth="93.0" text="Version 1.0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ListView fx:id="pd_list" layoutX="13.0" layoutY="58.0" prefHeight="263.0" prefWidth="302.0" />
+   </children>
+</AnchorPane>
